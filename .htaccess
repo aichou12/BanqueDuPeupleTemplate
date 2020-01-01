@@ -1,0 +1,23 @@
+RewriteEngine On
+
+RewriteRule ^accueil$ accueil.php
+RewriteRule ^.{0}$ index.php
+
+RewriteRule ^bootstrap$ public/css/bootstrap.min.css
+RewriteRule ^login$ src/model/loginbd.php
+RewriteRule ^clientdb$ src/model/clientdb.php
+RewriteRule ^comptedb$ src/model/comptedb.php
+RewriteRule ^clients$ src/view/client/liste.php
+RewriteRule ^ajoutClient$ src/view/client/add.php
+RewriteRule ^ajoutCompte$ src/view/compte/add.php
+RewriteRule ^comptes$ src/view/compte/liste.php
+
+
+RewriteRule ^loginController$ src/controller/loginController.php
+
+RewriteRule ^clientController$ src/controller/clientController.php
+
+RewriteRule ^compteController$ src/controller/compteController.php
+
+
+
